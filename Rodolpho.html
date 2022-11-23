@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="rodolpho.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Cadastro de Notas</title>
+</head>
+<body>
+    <h2 class="title">Lançamento de notas dos Alunos</h2>
+
+    <p class="subtitle">Insira abaixo as informaçoes solicitadas:</p>
+
+    <form action="">
+        <fieldset>
+            
+            <div class="form-text">
+                <div>
+                    <label for="nome">Nome do Aluno:</label>
+                    <input class="text-area large" type="text" id="nome" name="nome">
+                </div>
+                <div>
+                    <label for="matricula">Matrícula:</label>
+                    <input class="text-area large" type="text" id="matricula" name="matricula">
+                </div>
+            </div>
+            <div class="form-notes">
+                <div>
+                    <label for="nota1">Primeira Avaliação:</label>
+                    <input class="number-area large" type="number" min="0" max="10" id="nota1" name="nota1">
+                </div>
+                <div>
+                    <label for="nota2">Segunda Avaliação:</label>
+                    <input class="number-area large" type="number" min="0" max="10" id="nota2" name="nota2">
+                </div>
+                <div>
+                    <label for="nota3">Terceira Avaliação:</label>
+                    <input class="number-area large" type="number" min="0" max="10" id="nota3" name="nota3">
+                </div>
+            </div>
+            <input type="button" value="Inserir" class="submit-button" onclick="aluno.salvar()">
+        
+        </fieldset>
+    </form>
+    
+    <h2>Diário de Classe</h2>
+    <div class="content">
+        <table border="1">
+            <thead>
+                <th>Nome do Aluno</th>
+                <th>Matrícula</th>
+                <th>Avaliação 1</th>
+                <th>Avaliação 2</th>
+                <th>Avaliação 3</th>
+                <th>Média das Avaliações</th>
+                <th>Excluir Lançamento</th>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="Rodolpho.js"></script>
+</body>
+</html>
